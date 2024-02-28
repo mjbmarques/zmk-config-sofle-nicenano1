@@ -22,8 +22,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+            if-layers = <1 2>;
+            then-layer = <4>;
         };
     };
 
@@ -48,7 +48,9 @@
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp RET       &kp SPACE  &kp BACKSPACE  &mo 2   &kp RALT   &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN2>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -109,6 +111,16 @@
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+            >;
+        };
+
+        programming {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans                       &trans  &trans                        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans                       &trans  &trans                        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mt LC(LEFT_ALT) LEFT_ARROW  &trans  &mt LC(LEFT_ALT) RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                       &trans  &trans                        &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                       &trans  &trans
             >;
         };
     };
