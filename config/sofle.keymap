@@ -27,11 +27,12 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-key-positions = <55>;
             hold-trigger-on-release;
+            require-prior-idle-ms = <150>;
         };
     };
 
