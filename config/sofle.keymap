@@ -102,11 +102,11 @@
 
         extra {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans                 &trans  &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans                 &trans  &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mt LC(LEFT_ALT) LEFT  &trans  &mt LA(LCTRL) RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans  &trans               &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans            &trans     &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans            &trans     &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LC(LA(LEFT))  &kp LC(B)  &kp LC(LA(RIGHT))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans     &trans             &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans     &trans
             >;
         };
     };
