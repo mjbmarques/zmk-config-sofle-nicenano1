@@ -17,7 +17,14 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        left_and_right {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 
     behaviors {
         space_and_layer: space_and_layer {
