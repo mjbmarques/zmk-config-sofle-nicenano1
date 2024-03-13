@@ -38,7 +38,6 @@
             flavor = "hold-preferred";
             hold-trigger-key-positions = <55>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <150>;
         };
 
         enter_layer: enter_layer {
@@ -52,7 +51,6 @@
             flavor = "hold-preferred";
             hold-trigger-key-positions = <54>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <150>;
         };
     };
 
